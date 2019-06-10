@@ -1,0 +1,159 @@
+@font-face {
+  font-family: TaubSans;
+  src: url('fonts/Taub_Nouf.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: TaubDisplayA;
+  src: url('fonts/TaubDisplay-A.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: TaubDisplayB;
+  src: url('fonts/TaubDisplay-B.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: TaubDisplayC;
+  src: url('fonts/TaubDisplay-C.ttf') format('truetype');
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  cursor: default;
+}
+
+#textDiv {
+  /* background-color: aqua; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.properties {
+  font-family: TaubDisplayA;
+  font-size: 20em;
+  font-variation-settings: 'wght' 500;
+  color: #efdfd1;
+  cursor: default;
+}
+
+a {
+  font-family: TaubSans;
+  font-variation-settings: 'wght' 100;
+  font-size: 1.1em;
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+}
+
+/* Color schemes */
+.demo-magneto {
+  --color-text: #41353d;
+  --color-background: #FECB09;
+  --color-link: #000;
+  --color-link-hover: #41353d;
+}
+
+.demos {
+  width: 20%;
+  /* background-color: aqua; */
+  /* grid-area: demos; */
+  text-align: center;
+  /* display: block; */
+  position: fixed;
+  top: 96%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  z-index: 2;
+}
+
+.demo {
+  margin: 0 0.15em;
+}
+
+a.demo--current {
+  /* text-decoration: underline; */
+  color: black;
+  font-variation-settings: 'wght' 300;
+  /* background-color: #D6D3CC; */
+  /* pointer-events: none; */
+}
+
+.demo span {
+  text-transform: lowercase;
+  font-weight: bold;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+#title {
+  position: absolute;
+  width: 100%;
+  padding-top: 4em;
+  display: flex;
+  justify-content: center;
+  font-family: TaubSans;
+  font-size: 1.1em;
+  font-variation-settings: 'wght' 0;
+}
+
+#grid-container {
+  position: absolute;
+  width: 50%;
+  height: 49%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  /* background-color: aqua; */
+  margin: 0px;
+  padding: 0px;
+  z-index: 2;
+}
+
+.grid-item {
+  width: 33%;
+  font-family: TaubSans;
+  font-variation-settings: 'wght' 100;
+  background-color: transparent;
+  border: 0.5px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.grid-item:hover {
+  cursor: pointer;
+  /* background-color: red; */
+}
+
+#enlarge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.7);
+  font-family: TaubSans;
+  font-variation-settings: 'wght' 100;
+  width: 200px;
+  height: 200px;
+  visibility: hidden;
+  font-size: 9em;
+  color: white;
+  padding: 10px;
+}
