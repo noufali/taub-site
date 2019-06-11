@@ -160,18 +160,39 @@ a.demo--current {
   font-variation-settings: 'wght' 100;
   width: 200px;
   height: 200px;
-
   font-size: 9em;
   color: white;
   padding: 10px;
 }
 
-#time-container {
-  position: absolute;
+#location-info {
+  /* background-color: aqua; */
+  width: 15%;
+  height: auto;
+  float: left;
+  font-family: TaubSans;
+  font-variation-settings: 'wght' 80;
+  font-size: 1.3em;
+  color: #f2635d;
+  padding:6em;
+}
+
+#bigLetter {
+  float: left;
   width: auto;
   height: auto;
-  top: 100px;
-  left: 100px;
-  font-family: TaubSans-Regular;
-  font-variation-settings: 'wght' 100;
+  font-family: TaubDisplayA;
+  font-variation-settings: 'wght' 200;
+  font-size: 45em;
+  color: #f2635d;
+  padding-top: 0.15em;
+}
+
+#time {
+  font-family: TaubSans;
+  font-variation-settings: 'wght' 150;
+  font-size: 50px;
+  width: auto;
+  height:auto;
+  margin-top: 50px;
 }
