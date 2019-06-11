@@ -75,10 +75,10 @@ a:focus {
   height: 5%;
   display: flex;
   justify-content: left;
+  align-items: center;
   background-color: #26328c;
   color: #efdfd1;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   /* transform: translate(-50%, -90%); */
   z-index: 3;
 }
@@ -195,4 +195,17 @@ a.demo--current {
   width: auto;
   height:auto;
   margin-top: 50px;
+}
+#anatomy {
+  /* background-color: pink; */
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: TaubSans;
+  color: #efdfd1;
+  font-variation-settings: 'wght' 150;
+  font-size: 25em;
+  padding: 0.2em;
 }
