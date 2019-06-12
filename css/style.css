@@ -166,7 +166,7 @@ a.demo--current {
 }
 
 #location-info {
-  /* background-color: aqua; */
+  /* background-color: pink; */
   width: 15%;
   height: auto;
   float: left;
@@ -178,15 +178,18 @@ a.demo--current {
 }
 
 #bigLetter {
-  background-color: aqua;
+  /* background-color: aqua; */
   float: left;
-  width: auto;
+  width: 100vh;
   height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: TaubDisplayA;
   font-variation-settings: 'wght' 200;
-  font-size: 45em;
+  font-size: 70vh;
   color: #f2635d;
-  padding-top: 0.15em;
+  padding-top: 0.3em;
 }
 
 #time {
