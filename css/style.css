@@ -102,52 +102,42 @@ a.demo--current {
 }
 
 #container {
-  position: absolute;
+  /* background-color: grey; */
+  padding: 15vh;
   width: auto;
   height: auto;
-  top: 100px;
-  left: 100px;
-  z-index: 2;
-  margin-bottom: 4em;
-  /* transform: translate(-50%, -50%); */
 }
 
 #title {
-  width: 100%;
-  display: flex;
-  justify-content: left;
   font-family: TaubSans;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-variation-settings: 'wght' 80;
   color: #263587;
 }
 
 #grid-container {
-  display: grid;
-  justify-content: space-around;
-  grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
-  grid-template-rows: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .grid-item {
-  width: 33%;
+  width: 30px;
+  height: 30px;
   font-family: TaubSans-Regular;
   font-variation-settings: 'wght' 100;
-  background-color: transparent;
   border: 0.5px solid #263587;
-  padding: 20px;
-  padding-top: 15px;
-  font-size: 30px;
+  padding: 15px;
+  font-size: 1.8em;
   display: flex;
   justify-content: center;
-  text-align: center;
   color: #263587;
-  z-index: 3;
 }
 
 .grid-item:hover {
   cursor: pointer;
-  /* background-color: red; */
 }
 
 #enlarge {
