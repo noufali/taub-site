@@ -178,6 +178,7 @@ a.demo--current {
 }
 
 #bigLetter {
+  background-color: aqua;
   float: left;
   width: auto;
   height: auto;
@@ -196,16 +197,7 @@ a.demo--current {
   height:auto;
   margin-top: 50px;
 }
-#anatomy {
-  /* background-color: pink; */
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: TaubSans;
-  color: #efdfd1;
-  font-variation-settings: 'wght' 150;
-  font-size: 25em;
-  padding: 0.2em;
+
+#skeleton, #work {
+  visibility: hidden;
 }
