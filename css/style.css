@@ -36,12 +36,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: default;
+  padding-top: 3em;
 }
 
 .properties {
   font-family: TaubDisplayA;
-  font-size: 20em;
+  font-size: 45vh;
   font-variation-settings: 'wght' 500;
   color: #efdfd1;
   cursor: default;

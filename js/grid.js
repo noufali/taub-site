@@ -18,8 +18,9 @@ $(document).on('mousemove', function(e){
     left:  e.pageX - $('#container').offset().left,
     top:   e.pageY - $('#container').offset().top
   });
-  $('.grid-item').mouseover(function(){
+  $('.grid-item').hover(function(){
     let id = $(this).attr('id');
+    // $(this).css("background-color", "green");
     let letter = $("#" + id).text();
     $('#enlarge').css("visibility", "visible");
     $('#enlarge').html(letter + "");

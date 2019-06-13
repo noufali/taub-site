@@ -1,5 +1,7 @@
 var wid = window.innerWidth;
 var hei = window.innerHeight;
+var hypotenuse = calcHypotenuse(wid,hei);
+document.body.style.overflow = "hidden";
 
 var textDiv = document.getElementById("textDiv");
 textDiv.style.width = wid + "px";
@@ -21,7 +23,17 @@ function setup () {
 }
 
 function windowResized() {
+  //resize p5 canvas
+  wid = window.innerWidth;
+  hei = window.innerHeight;
   resizeCanvas(wid, hei);
+
+  // resize text Canvas
+  textDiv.style.width = wid + "px";
+  textDiv.style.height = hei + "px";
+
+  // recalculate hypotenuse
+  hypotenuse = calcHypotenuse(wid,hei);
 }
 
 function draw () {
@@ -59,8 +71,8 @@ function draw () {
   for (let n=0;n<taub.length;n++){
     let letterDiv = document.getElementById("w" + n);
     let text = distances[n].letter;
-    let impact = 1272;
-    let hi = map(distances[n].dist,0,impact/6,200,600);
+    let impact = hypotenuse;
+    let hi = map(distances[n].dist,0,impact/6,100,600);
 
     if (hi > 600){
       hi = 600;
@@ -72,4 +84,8 @@ function draw () {
 
     letterDiv.style.fontVariationSettings = " 'wght' " + hi;
   }
+}
+
+function calcHypotenuse(a, b) {
+  return(Math.sqrt((a * a) + (b * b)));
 }
