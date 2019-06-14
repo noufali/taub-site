@@ -22,7 +22,9 @@ function setup () {
   }
 }
 
-function windowResized() {
+window.onresize = resize;
+
+function resize() {
   //resize p5 canvas
   wid = window.innerWidth;
   hei = window.innerHeight;

@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head></head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <body>
-  	<div id="textDiv"></div>
     <nav class="demos">
-      <a class="demo demo--current demo-magneto" href="index.html"><span style="font-size:11px">01</span><br> <span>mouse</span></a>
-      <a class="demo" href="grid.html"><span style="font-size:11px">02</span><br> <span>grid</span></a>
-      <a class="demo" href="data.html"><span style="font-size:11px">03</span><br> <span>data</span></a>
-      <a class="demo" href="skeleton.html"><span style="font-size:11px">04</span><br> <span>skeleton</span></a>
+      <a class="demo demo--current demo-magneto" href="index.html"><span style="font-size:11px">01</span><br><span>intro</span></a>
+      <a class="demo" href="mouse.html"><span style="font-size:11px">02</span><br> <span>mouse</span></a>
+      <a class="demo" href="grid.html"><span style="font-size:11px">03</span><br> <span>grid</span></a>
+      <a class="demo" href="data.html"><span style="font-size:11px">04</span><br> <span>data</span></a>
+      <a class="demo" href="skeleton.html"><span style="font-size:11px">05</span><br> <span>skeleton</span></a>
+      <a class="demo" href="wave.html"><span style="font-size:11px">06</span><br> <span>Wave</span></a>
     </nav>
+
+    <div id="introDiv">
+      <div id="introTitle">
+        <h1 style="font-size:2vh">Introducing</h1>
+        <!-- <h1 style="font-size:6vh;font-variation-settings: 'wght' 150">Taub Type</h1> -->
+      </div>
+      <div id="introDescription">
+        <p>Typography is the means by which language is given form, so we created <b style="font-variation-settings: 'wght' 150">Taub</b> Type to unify, express, and elevate our communications. Named after ADP’s founder Henry Taub, Taub Type is an uplifting, inventive, and empathetic custom type system: Taub Sans and Taub Display. These variable fonts were designed in partnership with Chester Jenkins and reflect a classically proportioned, low contrast design that is workmanlike, elegant and dynamic. <br><br>Taub Display draws its inspiration from the works of Karl Gerstner and Otl Aicher and was drawn on an offset pixel grid, which informs Taub Sans’ construction, and connects to our iconography and data visualizations.</p>
+      </div>
+    </div>
   </body>
-  <script src="js/play.js"></script>
+  <script src="js/intro.js"></script>
 </html>
